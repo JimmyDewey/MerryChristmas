@@ -14,11 +14,11 @@ function setup() {
 function createObject() {
   for (i; i < mixnum; i++) {
     snows[i] = new Snow(
-      random(-windowWidth, windowWidth),
-      random(-60, 0),
-      random(1, 5),
-      random(0, 2),
-      random(0, 2),
+      random(-windowWidth, windowWidth),  // 起始点x
+      random(-60, 0),                     // 起始点y
+      random(1, 5),                       // 宽度
+      random(-2, 2),                       // x轴速度
+      random(2, 4),                       // y轴速度
       0
     );
   }
