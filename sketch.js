@@ -8,11 +8,11 @@ function setup() {
   mixnum = num;
   createCanvas(windowWidth, windowHeight);
   createObject();
-  let int = self.setInterval("createObject()", 2500);
+  setInterval("createObject()", 2500);
 }
 
 function createObject() {
-  for (i; i < mixnum; i++) {
+  for (; i < mixnum; i++) {
     snows[i] = new Snow(
       random(-windowWidth, windowWidth),  // 起始点x
       random(-60, 0),                     // 起始点y
